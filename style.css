@@ -1,0 +1,1122 @@
+/*index.html*/
+body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background: url("images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: "Marko One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#about-me article {
+    align-self: flex-start;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    background: transparent;
+    position: fixed;
+    padding: 0rem;
+    margin: 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+#content{
+    padding-top: 40vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+
+
+#skills div{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#skills li{
+    margin: 2rem;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    z-index: 1000;
+    
+}
+
+#about-me{
+    display: flex;
+    
+    flex-direction: column; 
+   
+}
+
+header li a{
+    color: white;
+}
+
+header a{
+    color: white;
+    text-decoration: none;;
+}
+
+header ul{
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li a:hover, header a:hover{
+    color:rgb(0, 123, 255);
+    transition: 0.4s ease;
+}
+
+#first-header-element{
+    display: flex;
+    padding-left: 1rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+#last-header-element{
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.navbar span{
+    color: rgb(0, 123, 255);
+    font-size: 3.5rem;
+}
+
+#welcome, #no-posts {
+    position: absolute;
+    width: 100%;
+    top: 45%; 
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 20px; 
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.about {
+    display: flex;
+    flex-wrap: nowrap; 
+    align-items: flex-start; 
+    padding-left: 3rem;
+}
+
+.about article {
+    flex: 1 1 60%; 
+}
+
+.about figure {
+    flex: 2 1 40%; 
+    padding-top: 10vh;
+}
+
+.about img {
+    width: 100%; 
+    height: auto; 
+   
+    border-radius: 10%;
+    border: 10px outset white;
+}
+
+#about-me h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    left: 0;
+    top: 0;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#about-me h3{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+#about-me p{
+    padding-top: 1.5rem;
+}
+
+#about-me,#skills {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+}
+
+aside{
+    padding-top: 60vh;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+aside ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+aside ul li{
+    height: 4rem;
+    width: 4rem;
+    float: left;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.icon{
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    line-height: 4rem;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    margin: 0.5rem;
+    transition: all 0.3s ease-out;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.icon i{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: black;
+}
+
+.icon a{
+    z-index: 1;
+}
+
+.icon span{
+    display: none;
+    position: absolute;
+    color: transparent;
+    left: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 4rem;
+    margin-left: 0.5rem;
+    align-self: center;
+
+}
+
+.icon:hover{
+    width: 14rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding-right: 0.5rem;
+    justify-content: start;
+    
+}
+
+
+.icon:hover i{
+    color: black;
+}
+
+.icon:hover span{
+    left: 4rem;
+    color: black;
+    display: block;
+}
+
+
+
+.timeline, .viewBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 9%;
+}
+
+.timeline .timeline-row{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.timeline-column .title{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.timeline-column .timeline-box, .blog-box{
+    border-left: 2px solid white;
+}
+
+.timeline-box .timeline-content, .blog-post{
+    padding-left: 3rem;
+}
+
+.timeline-content .content, .blog-text{
+    padding: 2.75rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-bottom: 32px;
+}
+
+.timeline-content .content .year, .blog-date-author{
+    font-size: 16px;
+    color: white;
+}
+
+.timeline-content .content h3, .blog-text h3{
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+.timeline-content .content p, .blog-text p{
+    font-size: 1.1rem;
+}
+
+#contact .contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact .contact-info:last-child{
+    padding-right:1rem;
+}
+
+#contact{
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.304);
+    margin: 2rem;
+    width: 95%;
+    border-radius: 1rem;
+    z-index: 2;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+
+footer{
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#contact .contact-info i{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, auto); 
+    gap: 1rem; 
+    width: 100%;
+    align-items: center;
+    
+}
+
+#skills div {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    margin: 3rem;
+    
+}
+
+#skills .heading{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+#skills .heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    left: 0;
+    top: 0;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+#html{
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+
+#css{
+    grid-column: 1;
+    grid-row: 3;
+    
+}
+
+#java{
+    grid-column: 1;
+    grid-row: 4;
+    
+}
+
+#python{
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+
+#blender{
+    grid-column: 2;
+    grid-row: 3 ;
+    
+}
+
+#visual-basic{
+    grid-column: 2;
+    grid-row: 4;
+    
+}
+
+#unity{
+    grid-column: 3;
+    grid-row: 2;
+    
+}
+
+#js{
+    grid-column: 3;
+    grid-row: 3;
+   
+}
+
+#swift{
+    grid-column: 3;
+    grid-row: 4;
+    
+}
+
+
+#html div, #css div, #java div{
+    margin-left: 3rem;
+    
+}
+
+#html img, #css img, #java img, #python img, #blender img, #visual-basic img, #unity img, #js img, #swift img{
+    width: 10rem;
+    height: auto;
+    align-self: center;
+    transition: width 0.3s ease-in-out;
+    transform-origin:center;
+}
+
+#skills div:hover img{
+    width: 14rem;
+    
+}
+
+#skills h2{
+    padding-top: 10vh;
+}
+
+/*index end*/
+
+/*responsive index start*/
+
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.hamburger:hover{
+    color: rgb(0, 123, 255);
+    transition: 0.4s ease;
+}
+
+.navbar ul.active{
+    display: flex;
+}
+
+@media screen and (max-width: 1450px){
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(0,0,0,0.9);
+    }
+
+   
+
+    .navbar .hamburger{
+        display: block;
+    }
+
+    .navbar li{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar li a{
+        padding: 1rem;
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 880px){
+    
+    
+    /*about me*/
+    .about{
+        padding-top: 10vh;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        
+    }
+
+
+    .about article {
+        overflow-wrap: break-word;
+        
+        box-sizing: break-word;
+        margin-bottom: 2rem;
+        width: 90%;
+        
+        
+    }
+
+    .about figure{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    
+
+    .about img{
+        max-width: 90%;
+        height: auto;
+        
+    }
+
+    #skills{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    #skills .heading{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #html{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    
+    #css{
+        grid-column: 1;
+        grid-row: 3;
+        
+    }
+    
+    #java{
+        grid-column: 1;
+        grid-row: 4;
+        
+    }
+    
+    #python{
+        grid-column: 1;
+        grid-row: 5;
+        
+    }
+    
+    #blender{
+        grid-column: 1;
+        grid-row: 6 ;
+        
+    }
+    
+    #visual-basic{
+        grid-column: 1;
+        grid-row: 7;
+        
+    }
+    
+    #unity{
+        grid-column: 1;
+        grid-row: 8;
+        
+    }
+    
+    #js{
+        grid-column: 1;
+        grid-row: 9;
+       
+    }
+    
+    #swift{
+        grid-column: 1;
+        grid-row: 10;
+        
+    }
+
+    .timeline-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+}
+
+/*responsive index end*/
+
+/*Project-Start*/
+
+.music-video video{
+    width: 65%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    margin-bottom: 8rem;
+    border: 4px solid white;
+
+}
+
+.music-project{
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.project-description{
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+}
+
+.project-description h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    left: 0;
+    top: 0;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2rem;
+
+}
+
+.music-project h1{
+    font-size: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    left: 0;
+    top: 0;
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2rem;
+}
+
+.description-box{
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.description-box p{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.music-video{
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*Project end*/
+
+/*Login start*/
+.login form{
+    font-family: 'poppins', sans-serif;
+}
+
+.login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.login-form-box{
+    position: relative;
+    width: 26rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-value form h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.login-inputbox{
+    position: relative;
+    margin: 4rem 0;
+    width: 20rem;
+    border-bottom: 2px solid white;
+}
+
+.login-inputbox label{
+    position: absolute;
+    top: 1.5rem;
+    left: 5px;
+    padding: 2rem 0;
+    transform: translateY(-50%);
+    transition: top 0.3s ease-out, transform 0.3s ease-out, font-size 0.3s ease-out;
+
+}
+
+.login-inputbox input{
+    width: 100%;
+    height: 3rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    padding: 0 0.5rem 0 0.1rem;
+    color:white;
+    font-family: 'poppins', sans-serif;
+}
+
+.login-inputbox i{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+.login-inputbox input:not(:placeholder-shown) + label,
+.login-inputbox input:focus + label{
+    top: -0.5rem; 
+    color: white; 
+}
+
+
+.remember{
+    display: flex;
+    margin-bottom: 1rem ;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#submit-login, #submit-register{
+    width: 100%;
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+/*login end*/
+
+/*addpost start*/
+
+.blog{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.blog-fields{
+    position: relative;
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.blog-fields form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-field-box-description textarea{
+    width: 80vw;
+    height: 25rem;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+    top: 0;
+}
+
+.form-field-box-title textarea{
+    width: 80vw;
+    height: 5rem;
+    color: white;
+    font-size: 1.25rem;
+    padding: 2rem;
+    top: 0;
+}
+
+
+
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button, .buttons #submit-blog{
+    
+    margin: 3rem;
+    width: 30%;
+    background: white;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.blog form h2{
+    padding-top: 7rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    left: 0;
+    top: 0;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.blog form .form-field input, .comment-form .add-comment{
+    background: rgba(131, 131, 131, 0.165);
+    border-radius: 1rem;
+}
+
+.form-field textarea{
+    background: rgba(131, 131, 131, 0.165);
+    border-radius: 1rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.form-field label{
+    font-family: 'poppins', sans-serif;
+    display:flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+.is-invalid {
+    border: 2px solid red; 
+    background-color: #ffcccc; 
+}
+
+/*addPost end*/
+
+/*responsive addPost start*/
+@media screen and (max-width: 1090px) {
+    .blog-fields {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    form #post-form{
+        margin: 3rem;
+    }
+
+    .form-field-box-description input {
+        width: 80vw;
+    }
+
+    .form-field-box-title input {
+        width: 80vw; 
+    }
+
+    .form-field label {
+        font-size: 1.8rem; 
+    }
+
+    .buttons {
+        flex-direction: row; 
+        align-items:normal;
+    }
+
+    .blog form h2 {
+        font-size: 2.5rem; 
+        margin: 0; 
+    }
+       
+}
+
+
+/*responsive addPost end*/
+
+/*viewBlog start*/
+
+.blog-date-author{
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewBlog{
+    display: flex;
+    justify-content: flex-start;
+    min-height: 80vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-direction: column;
+}
+
+
+.blog-post{
+    word-break: break-all;
+    position:relative;
+} 
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    /* min-width: 65vw; */
+}
+
+.dropdown h1{
+    padding-right: 0.5rem;
+    font-family: "IM Fell English SC", serif;
+}
+
+#months{
+    padding-top: 0;
+    border-radius: 1rem;
+    min-height: 2.5rem;
+    /* min-width: 7rem; */
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "IM Fell English SC", serif;
+}
+
+.blog-date-author{
+    font-family: "Anta", sans-serif;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .blog-date-author{
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+#np-month{
+    
+    width: auto;
+    top: 45%; 
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 20px; 
+    font-family: "IM Fell English SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.delete{
+    font-size: 1.25rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    
+}
+
+.delete:hover{
+    color: rgb(0, 123, 255);
+    transition: 0.4s ease;
+}
+
+.title-and-bin{
+    display:flex;
+    justify-content: space-between;
+}
+
+.comments-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-content{
+    display: none;
+}
+
+.expand-comments-section{
+    padding-right: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.expand-comments-section:hover{
+    color: rgb(0, 123, 255);
+    transition: 0.4s ease;
+}
+
+.add-comment{
+    margin-left: 1rem;
+    min-width: 55vw;
+    min-height: 3rem;
+    color: white;
+   
+}
+
+.add-comment form{
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+.add-comment-submit{
+    background-color: white;
+    border-radius: 1.5rem;
+    height: 3.5rem;
+    width: 10rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.actual-comment {
+    border: solid 2px rgb(0, 123, 255);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 10px; /* Add some padding for aesthetics */
+}
+
+.actual-comment-text {
+    display: flex;
+    justify-content: space-between; /* This spreads out the child elements */
+    align-items: center; /* Aligns items vertically */
+    width: 100%; /* Ensures the container takes full width */
+}
+
+.actual-comment-text p {
+    flex-grow: 1; /* Allows the text paragraph to take up as much space as possible */
+    margin-right: 10px; /* Adds a bit of margin before the delete icon */
+}
+
+.delete-comment {
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+    margin-left: 10px; /* Gives some space to the left of the delete icon */
+}
+
+.delete-comment:hover {
+    cursor: pointer;
+    color: rgb(0, 123, 255);
+    transition: color 0.4s ease;
+}
+
+/*viewBlog end*/
